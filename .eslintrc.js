@@ -34,6 +34,7 @@ module.exports = {
         "@typescript-eslint",
         "import",
         "jsx-a11y",
+        "prefer-arrow",
         "react-hooks",
         "prettier"
     ],
@@ -88,6 +89,16 @@ module.exports = {
                 explicitSpread: 'ignore',
             },
         ],
+        'prefer-arrow/prefer-arrow-functions': [
+            'error',
+            {
+                disallowPrototype: true,
+                singleReturnOnly: false,
+                classPropertiesAllowed: false
+            }
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"]
     },
     overrides: [
         {
